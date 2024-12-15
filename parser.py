@@ -1,6 +1,8 @@
 from time import sleep
 from selenium import webdriver
 
+# !!! ЧТОБЫ ОСТАНОВИТЬ СКРИПТ - CTRL + C (в терминале написать)
+
 visited_urls = []
 
 driver = webdriver.Chrome() 
@@ -33,3 +35,7 @@ while urls:
         if 'wikipedia' in href and href not in visited_urls:
             urls.append(href)
             urls = list(set(urls))
+
+
+
+
